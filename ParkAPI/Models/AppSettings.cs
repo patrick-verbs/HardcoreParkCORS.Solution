@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace ParkAPI.Models
+namespace ParkAPI
 {
   public class AppSettings
   {
