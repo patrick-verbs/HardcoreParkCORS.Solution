@@ -18,6 +18,10 @@ namespace ParkAPI
     {
         public Startup(IConfiguration configuration)
         {
+            // Check for the 'appsettings.json' file
+            // & create via console prompts if not found
+            AppSettings.CheckSettings();
+
             Configuration = configuration;
         }
 
