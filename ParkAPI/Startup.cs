@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace HardcoreParkCORS
+namespace ParkAPI
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace HardcoreParkCORS
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "HardcoreParkCORS", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ParkAPI", Version = "v1" });
             });
         }
 
@@ -41,10 +41,10 @@ namespace HardcoreParkCORS
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HardcoreParkCORS v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ParkAPI v1"));
             }
 
-            // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

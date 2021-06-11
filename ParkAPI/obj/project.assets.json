@@ -591,11 +591,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Patrick/HardcoreParkCORS/HardcoreParkCORS.csproj",
-      "projectName": "HardcoreParkCORS",
-      "projectPath": "/Users/Patrick/HardcoreParkCORS/HardcoreParkCORS.csproj",
+      "projectUniqueName": "/Users/Patrick/HardcoreParkCORS/ParkAPI/ParkAPI.csproj",
+      "projectName": "ParkAPI",
+      "projectPath": "/Users/Patrick/HardcoreParkCORS/ParkAPI/ParkAPI.csproj",
       "packagesPath": "/Users/Patrick/.nuget/packages/",
-      "outputPath": "/Users/Patrick/HardcoreParkCORS/obj/",
+      "outputPath": "/Users/Patrick/HardcoreParkCORS/ParkAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Patrick/.nuget/NuGet/NuGet.Config"

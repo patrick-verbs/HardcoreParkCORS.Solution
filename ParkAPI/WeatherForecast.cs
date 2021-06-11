@@ -1,6 +1,6 @@
 using System;
 
-namespace HardcoreParkCORS
+namespace ParkAPI
 {
     public class WeatherForecast
     {

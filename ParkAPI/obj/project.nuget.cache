@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3lM+fNRQdwRUfGzEC1ac3LlJEPcNJkuWswbCtIzGSQJDdU0l/ZWXoTQU3k1Vuar8Wdt/1b8nR08How/oiGdOcg==",
+  "dgSpecHash": "rYbHOsAZHdDrdTnrtiOf5sfWHQXyKRsjr5aJR6FLW3kWG1Gm0jjK4nDGHo9M35nmR5qjHZ/T/PE9c9HZe63CEA==",
   "success": true,
-  "projectFilePath": "/Users/Patrick/HardcoreParkCORS/HardcoreParkCORS.csproj",
+  "projectFilePath": "/Users/Patrick/HardcoreParkCORS/ParkAPI/ParkAPI.csproj",
   "expectedPackageFiles": [
     "/Users/Patrick/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.0/microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
     "/Users/Patrick/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/5.0.0/microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
