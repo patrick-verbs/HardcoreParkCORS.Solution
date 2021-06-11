@@ -1,0 +1,7 @@
+*/appsettings.json
+*/bin/
+*/obj/
+.vscode/
+EnvironmentSettings.cs
+.DS_Store
+.env
