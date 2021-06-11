@@ -28,9 +28,16 @@ This project was made to demonstrate building out a backend API using an ASP.NET
       - Copy the text box below and paste into the `appsettings.json` file, replacing `<password>` with your MySQL password:
       ```
       {
-         "ConnectionStrings": {
-            "DefaultConnection": "Server=localhost;Port=3306;database=patrick_lee_park_api;uid=root;pwd=<password>;"
-            }
+        "Logging": {
+          "LogLevel": {
+            "Default": "Warning",
+            "System": "Information",
+            "Microsoft": "Information"
+          }
+        },
+        "ConnectionStrings": {
+          "DefaultConnection": "Server=localhost;Port=3306;database=patrick_lee_park_api;uid=root;pwd=<password>;"
+        }
       }
       ```
       - Open your terminal and run the command: `mysql -uroot -p<mysql_password>` (replace `<mysql_password>` with your MySQL password) to launch MySQL server
