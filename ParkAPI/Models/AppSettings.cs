@@ -89,7 +89,7 @@ namespace ParkAPI
             appPort = Console.ReadLine();
           }
 
-          string appDatabase = "patrick_lee";
+          string appDatabase = "patrick_lee_park_api";
           Console.BackgroundColor = ConsoleColor.DarkBlue;
           Console.ForegroundColor = ConsoleColor.Yellow;
           Console.WriteLine("\nDATABASE NAME: " + appDatabase);
@@ -136,7 +136,7 @@ namespace ParkAPI
             // Create the "appsettings.json" file, or overwrite if the file exists.
             using (FileStream fs = File.Create(appsettingsFile))
             {
-              byte[] info = new UTF8Encoding(true).GetBytes("{\n  \"SettingsValidated\": false,\n  \"Logging\": {\n    \"LogLevel\": {      \"Default\": \"Warning\",\n      \"System\": \"Information\",\n      \"Microsoft\": \"Information\"\n    }\n  },\n  \"AllowedHosts\": \"*\",\n  \"ConnectionStrings\": {\n    \"DefaultConnection\": \"Server=" + appServer + ";Port=" + appPort + ";database=" + appDatabase + ";uid=" + appUserId + ";pwd=" + appPassword + ";\"\n  }\n}");
+              byte[] info = new UTF8Encoding(true).GetBytes("{\n  \"SettingsValidated\": false,\n  \"Logging\": {\n    \"LogLevel\": {\n      \"Default\": \"Warning\",\n      \"System\": \"Information\",\n      \"Microsoft\": \"Information\"\n    }\n  },\n  \"AllowedHosts\": \"*\",\n  \"ConnectionStrings\": {\n    \"DefaultConnection\": \"Server=" + appServer + ";Port=" + appPort + ";database=" + appDatabase + ";uid=" + appUserId + ";pwd=" + appPassword + ";\"\n  }\n}");
               // Add some information to the file.
               fs.Write(info, 0, info.Length);
             }
