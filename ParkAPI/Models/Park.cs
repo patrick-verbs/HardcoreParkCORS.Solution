@@ -9,11 +9,15 @@ namespace ParkAPI.Models
         [StringLength(32)]
         public string Name { get; set; }
         [Required]
-        [StringLength(12)]
-        public string Phone { get; set; }
+        public string Type { get; set; }
+        [Required]
+        public string Location { get; set; }
         [Required]
         public string Description { get; set; }
         [Required]
-        public int LocationProximity { get; set; }
+        public string Url { get; set; }
+        [Required]
+        [StringLength(12)]
+        public string Phone { get; set; }
     }
 }
