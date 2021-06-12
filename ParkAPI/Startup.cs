@@ -22,6 +22,7 @@ namespace ParkAPI
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             // Check for the 'appsettings.json' file
@@ -36,6 +37,17 @@ namespace ParkAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins, builder =>
+                {
+                    builder.WithOrigins(
+                        "http://github.com",
+                        "http://patrick-verbs.github.io"
+                    );
+                });
+            });
+
             services.AddDbContext<ParkAPIContext>(opt => opt.UseMySql(
                 Configuration["ConnectionStrings:DefaultConnection"],
                 ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])
@@ -60,8 +72,12 @@ namespace ParkAPI
             }
 
             // app.UseHttpsRedirection();
-
+            // app.UseStaticFiles();
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
+
+            // app.UseResponseCaching();
 
             app.UseAuthorization();
 
